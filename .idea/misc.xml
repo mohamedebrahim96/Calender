@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/rounded_button_blue.xml" value="0.2045" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.39791666666666664" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.2513157894736842" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.165" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.188" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.188" />
       </map>

@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Calender</string>
     <string name="create_events">Create events</string>
     <string name="create_events_description">Create multiple events from today until 7 days</string>
 </resources>

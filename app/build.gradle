@@ -85,6 +85,7 @@ dependencies {
     // hilt
     implementation "com.google.dagger:hilt-android:$versions.hiltCoreVersion"
     implementation "androidx.hilt:hilt-common:$versions.hiltVersion"
+    implementation 'androidx.test:core-ktx:1.4.0'
     kapt "com.google.dagger:hilt-compiler:$versions.hiltCoreVersion"
     kapt "androidx.hilt:hilt-compiler:$versions.hiltVersion"
     androidTestImplementation "com.google.dagger:hilt-android-testing:$versions.hiltCoreVersion"
@@ -95,6 +96,8 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-livedata-ktx:$versions.lifecycleVersion"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.lifecycleVersion"
     implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$versions.lifecycleVersion"
+
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
 
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

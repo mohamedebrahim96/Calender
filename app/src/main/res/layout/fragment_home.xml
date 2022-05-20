@@ -13,17 +13,151 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/grey_100"
+        android:background="@color/blue_900"
         android:fillViewport="true">
 
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/blue_600"
+            android:elevation="10dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:fontFamily="@font/sf_pro_regular"
+                    android:scaleType="fitCenter"
+                    android:text="@string/app_name" />
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:id="@+id/notMemberTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:fontFamily="@font/sf_pro_regular"
+            android:gravity="start"
+            android:text="2- Please select calender account"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/allowPermissions"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/allowPermissions"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="67dp"
+            android:layout_marginBottom="67dp"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:background="@drawable/rounded_button_blue"
+            android:fontFamily="@font/sf_pro_regular"
+            android:gravity="center"
+            android:text="Allow permissions"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@+id/notMemberTextView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/notMemberTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:fontFamily="@font/sf_pro_regular"
+            android:gravity="start"
+            android:text="2- Please select calender account"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/accountPicker"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/accountPicker"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:layout_marginBottom="67dp"
+            android:background="@drawable/rounded_button_blue"
+            android:fontFamily="@font/sf_pro_regular"
+            android:gravity="center"
+            android:text="Choose account"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@id/notMemberTextView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/notMemberTextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:fontFamily="@font/sf_pro_regular"
+            android:gravity="start"
+            android:text="3- Now you can create events for the next 7 days"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/createEventsBTN"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <Button
+            android:id="@+id/createEventsBTN"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="@dimen/dimen_16"
+            android:layout_marginTop="67dp"
+            android:layout_marginEnd="@dimen/dimen_16"
+            android:background="@drawable/rounded_button_blue"
+            android:fontFamily="@font/sf_pro_regular"
+            android:gravity="center"
+            android:text="@string/create_events"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topAppBar" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/intercomFAB"
+            android:id="@+id/deleteCalenderFAB"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:backgroundTint="@color/purple_700"
+            android:backgroundTint="@color/blue_600"
             android:contentDescription="help_and_support"
+            android:src="@android:drawable/ic_delete"
+            android:tint="@color/blue_900"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
